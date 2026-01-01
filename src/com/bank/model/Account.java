@@ -8,4 +8,10 @@ public class Account  {
     private String accountType;
     private Client client;
 
+    public Account(double balance, String accountType, Client client) {
+        this.accountNumber=UUID.randomUUID();
+        this.balance = balance;
+        this.accountType = accountType;
+        this.client = client;
+    }
 }
